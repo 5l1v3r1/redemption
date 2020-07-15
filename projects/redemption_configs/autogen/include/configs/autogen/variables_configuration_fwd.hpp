@@ -458,7 +458,6 @@ namespace cfg
         struct focus_color;
         struct error_color;
         struct logo;
-        struct logo_path;
         struct edit_bgcolor;
         struct edit_fgcolor;
         struct edit_focus_color;

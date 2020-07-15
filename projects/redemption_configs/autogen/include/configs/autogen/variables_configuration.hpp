@@ -5164,25 +5164,16 @@ namespace cfg
         using mapped_type = sesman_and_spec_type;
         type value = "yellow";
     };
-    /// type: bool <br/>
-    /// default: {false} <br/>
-    struct theme::logo {
-        static constexpr bool is_sesman_to_proxy = false;
-        static constexpr bool is_proxy_to_sesman = false;
-        using type = bool;
-        using sesman_and_spec_type = bool;
-        using mapped_type = sesman_and_spec_type;
-        type value{false};
-    };
+    /// File path for upload logo <br/>
     /// type: std::string <br/>
-    /// default:  = "" <br/>
-    struct theme::logo_path {
+    /// default:  = REDEMPTION_CONFIG_THEME_LOGO <br/>
+    struct theme::logo {
         static constexpr bool is_sesman_to_proxy = false;
         static constexpr bool is_proxy_to_sesman = false;
         using type = std::string;
         using sesman_and_spec_type = std::string;
         using mapped_type = sesman_and_spec_type;
-        type value = "";
+        type value = REDEMPTION_CONFIG_THEME_LOGO;
     };
     /// type: std::string <br/>
     /// default:  = "white" <br/>
@@ -5798,7 +5789,7 @@ struct theme
 , cfg::theme::separator_color
 , cfg::theme::focus_color
 , cfg::theme::error_color
-, cfg::theme::logo_path
+, cfg::theme::logo
 , cfg::theme::edit_bgcolor
 , cfg::theme::edit_fgcolor
 , cfg::theme::edit_focus_color
@@ -5816,7 +5807,6 @@ struct theme
 , cfg::theme::selector_label_bgcolor
 , cfg::theme::selector_label_fgcolor
 , cfg::theme::enable_theme
-, cfg::theme::logo
 { static constexpr bool is_section = true; };
 
 } // namespace cfg_section
