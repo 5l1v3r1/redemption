@@ -3586,8 +3586,9 @@ namespace cfg
         using mapped_type = sesman_and_spec_type;
         type value{};
     };
-    /// - variable = 0x02 <br/>
-    /// - buffer   = 0x40 <br/>
+    /// - variable = 0x0002 <br/>
+    /// - buffer   = 0x0040 <br/>
+    /// - dump     = 0x1000 <br/>
     /// type: uint32_t <br/>
     /// default: {} <br/>
     struct debug::auth {
